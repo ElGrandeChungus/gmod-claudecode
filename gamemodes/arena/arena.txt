@@ -1,0 +1,13 @@
+"arena"
+{
+	"base"		"base"
+	"title"		"Arena"
+	"category"	"pvp"
+	"maps"		"^gm_|^cs_|^de_"
+	"menusystem"	"1"
+
+	"settings"
+	{
+		"teamsize"	"6"
+	}
+}
