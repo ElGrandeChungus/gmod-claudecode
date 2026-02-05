@@ -39,6 +39,9 @@ function ARENA:ProcessDamage(dmgInfo)
 
     if not IsValid(victim) or not victim:Alive() then return end
 
+    -- God mode check
+    if victim._arenaGodMode then return end
+
     -- 0. Apply global damage scale
     dmgInfo.Damage = dmgInfo.Damage * self.Config.GlobalDamageScale
 
